@@ -1,9 +1,22 @@
-# <span style="color: #007acc;">⚙️ Kubernetes CI/CD with Github Actions and Helm 🚀</span>
+# <span style="color: #007acc;">🚀 Kubernetes CI/CD with Github Actions and Helm ⚙️</span>
 
 This repository demonstrates a complete CI/CD pipeline for deploying an Express.js application to Amazon EKS using GitHub Actions and Helm charts.
 
 ## 🏗️ Architecture Overview
-**🐳 Docker** → **🐙 GitHub Actions** → **📦 AWS ECR** → **⎈ Amazon EKS** → **⎈ Helm**
+<div align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) 
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=for-the-badge&logo=amazon-eks&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+
+</div>
+
+**Flow:** Node.js/Express → Docker → GitHub Actions → AWS ECR → Amazon EKS → Helm Deployment
 
 ## 📋 **Table of Contents**
 * [📋 **Table of Contents**](#table-of-contents)
@@ -27,19 +40,19 @@ This repository demonstrates a complete CI/CD pipeline for deploying an Express.
 
 Before starting this tutorial, ensure you have the following:
 
-- ☁️ **AWS CLI** installed and configured with appropriate permissions
-- ⎈ **kubectl** installed and configured
-- 🐳 **Docker** installed locally
-- 🟢 **Node.js** and npm installed
-- ⎈ **Helm 3.x** installed
-- 🐙 **GitHub** account with repository access
+- ![AWS CLI](https://img.shields.io/badge/AWS_CLI-232F3E?style=flat&logo=amazon-aws&logoColor=white) **AWS CLI** installed and configured with appropriate permissions
+- ![Kubernetes](https://img.shields.io/badge/kubectl-326CE5?style=flat&logo=kubernetes&logoColor=white) **kubectl** installed and configured
+- ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) **Docker** installed locally
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white) **Node.js** and npm installed
+- ![Helm](https://img.shields.io/badge/Helm_3.x-0F1689?style=flat&logo=helm&logoColor=white) **Helm 3.x** installed
+- ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) **GitHub** account with repository access
 - 🧠 Basic knowledge of Kubernetes, Docker, and CI/CD concepts
 
 **🔐 Required AWS Permissions:**
-- ☁️ EKS cluster creation and management
-- 📦 ECR repository creation and push/pull access
-- 👤 IAM role creation for EKS nodes
-- 🌐 VPC and security group management
+- ![Amazon EKS](https://img.shields.io/badge/EKS-FF9900?style=flat&logo=amazon-eks&logoColor=white) EKS cluster creation and management
+- ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?style=flat&logo=amazon-aws&logoColor=white) ECR repository creation and push/pull access
+- ![AWS IAM](https://img.shields.io/badge/IAM-FF9900?style=flat&logo=amazon-aws&logoColor=white) IAM role creation for EKS nodes
+- ![AWS VPC](https://img.shields.io/badge/VPC-FF9900?style=flat&logo=amazon-aws&logoColor=white) VPC and security group management
 
 ---
 
